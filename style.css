@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  align-items: center;
+  background: linear-gradient(320deg, #88127e, #2d6685, #635396, #a491f1);
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
+}
+
+.wrapper {
+  box-shadow: rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 16px;
+  flex-basis: 400px;
+  height: 540px;
+  padding: 20px 35px;
+}
+
+.screen {
+  box-shadow: rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  font-size: 35px;
+  overflow: auto;
+  padding: 20px;
+  text-align: center;
+  width: 326px;
+}
+
+.calc-input {
+  display: flex;
+  justify-content: space-between;
+  margin: 20% 0;
+}
+.calc-submit {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+}
+
+.calc-input input {
+  box-shadow: rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  overflow: auto;
+  text-overflow: ellipsis;
+  text-align-last: center;
+  padding: 2%;
+}
+
+label {
+  font-size: 25px;
+  box-shadow: rgba(35, 35, 35, 0.1);
+  color: #1d1b1c;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.calc-submit input {
+  flex-basis: 100%;
+  box-shadow: rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(58, 222, 13, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.calc-submit input:hover {
+  background-color: inherit;
+  color: inherit;
+}
+.calc-submit input:active {
+  background-color: #ee3131;
+  color: #fff;
+}
